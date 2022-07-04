@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css" />
+  </head>
+  <body>
+    <form>
+      <label for="fname">First name: </label>
+      <input
+        onkeyup="fnameFunction()"
+        type="text"
+        id="fname"
+        name="fname"
+      /><br /><br />
+      <p class="red" id="first"></p>
+      <label for="fname">Last name: </label>
+      <input
+        onkeyup="lnameFunction()"
+        type="text"
+        id="lname"
+        name="lname"
+      /><br /><br />
+      <p class="red" id="second">Please enter lname</p>
+      <label for="Email">Email:</label>
+      <input
+        onkeyup="formFunction()"
+        type="email"
+        id="email"
+        name="email"
+      /><br /><br />
+      <p class="red" id="mail">Please enter email</p>
+      <label for="Date of Birth">Date of Birth:</label>
+      <input
+        onkeyup="formFunction()"
+        type="date"
+        id="birth"
+        name="Date of Birth"
+      /><br /><br />
+      <p class="red" id="datebirth">Please enter DOB</p>
+      <label for="Gender">Gender: </label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="Male">Male </label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="Female">Female </label>
+      <input type="radio" id="others" name="gender" value="others" />
+      <label for="others">others </label><br /><br />
+      <label for="Mobnum">Mobilenumber: </label>
+      <input
+        onkeyup="formFunction()"
+        type="number"
+        id="mobnum"
+        name="mobnum"
+      /><br /><br />
+      <p class="red" id="mobile">Please enter mobnumber</p>
+      <label for="edu">Education: </label>
+      <select name="Education" id="edu">
+        <option value="dot"></option>
+        <option value="MACE">Mace</option>
+        <option value="MEC">MEC</option>
+        <option value="CET">CET</option>
+        <option value="MBCET">MBCET</option></select
+      ><br /><br />
+      <input type="checkbox" id="accept" name="accept" value="accept" />
+      <p class="red" id="box">Please accept terms & conditions</p>
+      <label for="accept">Accept terms and conditions</label><br /><br />
+      <button onclick="myFunction()" name="button" value="OK" type="button">
+        Save
+      </button>
+      <button name="button" value="OK" type="button">Cancel</button>
+    </form>
+    <div id="response">
+      <p id="firstname"></p>
+      <p id="secondname"></p>
+      <p id="mails"></p>
+      <p id="birthDate"></p>
+      <p id="gen"></p>
+      <p id="mnum"></p>
+      <p id="edun"></p>
+    </div>
+    <script src="Form.js"></script>
+  </body>
+</html>
